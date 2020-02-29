@@ -3,6 +3,10 @@ the start of something new:
 the daskalos class implements the (Chathack) chatbot
 '''
 
+#library for HTTP requests
+import requests
+#library for parsing HTML
+from bs4 import BeautifulSoup
 import re
 import string
 import numpy as np
@@ -10,7 +14,6 @@ import random
 from nltk.stem.porter import *
 
 
-# noinspection PyMethodMayBeStatic
 class Daskalos:
     def __init__(self):
         self.name = 'philosophicalbot'
